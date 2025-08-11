@@ -1,0 +1,281 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #004b5f;
+  color: white;
+  font-family: 'Segoe UI', sans-serif; /* ✅ Added font for consistency */
+  font-size: 16px; /* ✅ Added base font size */
+  line-height: 1.6; /* ✅ Added line height for better readability */
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: #004b5f;
+  padding: 1rem 2rem;
+  height: 80px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffc107;
+}
+
+.custom-navbar .navbar-brand img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.custom-navbar .btn, .nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hero Section */
+header {
+  background-image: url('images/BOHOLCOVER.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 120px 0;
+  text-align: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+header .btn {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: #009b90;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+}
+
+header .btn:hover {
+  background-color: #007f75;
+}
+
+/* Carousel Section */
+.carousel-inner {
+  height: 100vh;
+  background-color: #c8e6ea;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* About Us Section */
+#about {
+  background-color: #ece2d9;
+  padding: 60px 0;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #004b5f;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 900px;
+  margin-top: 15px;
+}
+
+#about .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .col-md-6 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  #about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Map Section */
+#map-container {
+  width: 100vw;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#philippine-map-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Destinations Section */
+#destinations {
+  padding: 60px 0;
+  background-color: #d0ecf1;
+}
+
+#destinations h2 {
+  color: #004b5f;
+  font-size: 2.5rem;
+}
+
+#destinations .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+#destinations .card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#destinations .card-title {
+  color: #009b90;
+  font-weight: bold;
+}
+
+#destinations .card-text {
+  color: #444;
+}
+
+#destinations .btn {
+  background-color: #009b90;
+  border-radius: 25px;
+  color: white;
+}
+
+#destinations .btn:hover {
+  background-color: #007f75;
+}
+
+#destinations .card:hover { 
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#destinations.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+#destinations.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #002f36;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive Fixes */
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Destinations Page Styling */
+#destinations-page {
+  background-color: #d0ecf1;
+}
+
+#destinations-page h2 {
+  color: #004b5f;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.destination-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.destination-card img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.destination-card .card-title {
+  color: #009b90;
+  font-weight: bold;
+}
+
+.destination-card .card-text {
+  color: #444;
+}
+
+.destination-card .btn {
+  background-color: #009b90;
+  border-radius: 25px;
+  color: white;
+}
+
+.destination-card .btn:hover {
+  background-color: #007f75;
+}
